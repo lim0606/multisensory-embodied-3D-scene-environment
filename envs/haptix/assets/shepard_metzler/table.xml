@@ -1,0 +1,54 @@
+<mujoco>
+    <!--
+    <asset>
+        <texture name="groundplane" type="2d" builtin="checker" rgb1=".2 .3 .4"
+            rgb2=".1 .2 .3" width="100" height="100" mark="none" markrgb=".8 .8 .8"/>
+        <texture name="marble2d" type="2d" file="marble.png"/>
+        <texture name="marblecube" type="cube" file="marble.png"/>
+
+        <material name="groundplane" texture="groundplane" texrepeat="10 10"/>
+        <material name="table2d" texture="marble2d" reflectance="0.6" rgba=".8 .8 .8 1"/>
+        <material name="tablecube" texture="marblecube" rgba=".8 .8 .8 1"/>
+    </asset>
+    -->
+	<worldbody>
+		<!-- ======= LIGHT ======= -->
+		<!--
+		<light directional="false" cutoff="35" exponent="10" diffuse=".7 .7 .7" pos="0.4 -0.2 1.5" dir="-0.4 0.2 -1.5" specular=".3 .3 .3"/>
+		<light directional="false" cutoff="35" exponent="10" diffuse=".7 .7 .7" pos="0.4 -0.2 1.5" dir="0. 0. -1." specular=".3 .3 .3"/>
+		-->
+
+		<!-- ======= Background  ======= -->
+		<!--
+		<geom name="groundplane" contype="0" conaffinity="0" type="plane" pos="0 0 -1.1" size="10 10 0.25" material="groundplane"/>
+		<geom name="wall1" type="plane" material="MatPlane" pos=".7 0 0." zaxis="-1 0 0" size=".1 .7 .025"/>
+		<geom name="wall2" type="plane" material="MatPlane" pos="-.7 0 0." zaxis="1 0 0" size=".1 .7 .025"/>
+		<geom name="wall3" type="plane" material="MatPlane" pos="0 .7 0." zaxis="0 -1 0" size=".7 .1 .025"/>
+		<geom name="wall4" type="plane" material="MatPlane" pos="0 -.7 0." zaxis="0 1 0" size=".7 .1 .025"/>
+		-->
+
+		<!-- ======= TABLE  ======= -->
+		<geom name="floor" type="plane" material="table2d" pos="0 0 -0.1" size=".7 .7 .025"/>
+		<geom name="table" contype="0" conaffinity="0" type="box" material="tablecube" pos="0 0 -0.126" size=".7 .7 .025"/>
+		<geom name="leg1" contype="0" conaffinity="0" type="cylinder" fromto=".6 .6 -1.001 .6 .6 -0.101" size="0.04"/>
+		<geom name="leg2" contype="0" conaffinity="0" type="cylinder" fromto="-.6 .6 -1.001 -.6 .6 -0.101" size="0.04"/>
+		<geom name="leg3" contype="0" conaffinity="0" type="cylinder" fromto=".6 -.6 -1.001 .6 -.6 -0.101" size="0.04"/>
+		<geom name="leg4" contype="0" conaffinity="0" type="cylinder" fromto="-.6 -.6 -1.001 -.6 -.6 -0.101" size="0.04"/>
+
+		<!--
+		<geom type="plane" material="MatPlane" pos=".6 0 0.1" zaxis="-1 0 1" size=".1 .5 .025"/>
+		<geom type="plane" material="MatPlane" pos="-.6 0 0.1" zaxis="1 0 1" size=".1 .5 .025"/>
+		<geom type="plane" material="MatPlane" pos="0 .6 0.1" zaxis="0 -1 1" size=".5 .1 .025"/>
+		<geom type="plane" material="MatPlane" pos="0 -.6 0.1" zaxis="0 1 1" size=".5 .1 .025"/>
+		-->
+		<!-- ======= WALL ======= -->
+		<!--
+		<geom name="wall1" type="plane" material="MatPlane" pos=".7 0 0." zaxis="-1 0 0" size=".1 .7 .025"/>
+		<geom name="wall2" type="plane" material="MatPlane" pos="-.7 0 0." zaxis="1 0 0" size=".1 .7 .025"/>
+		<geom name="wall3" type="plane" material="MatPlane" pos="0 .7 0." zaxis="0 -1 0" size=".7 .1 .025"/>
+		<geom name="wall4" type="plane" material="MatPlane" pos="0 -.7 0." zaxis="0 1 0" size=".7 .1 .025"/>
+		-->
+
+	</worldbody>
+
+</mujoco>

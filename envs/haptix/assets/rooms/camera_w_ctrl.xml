@@ -1,0 +1,22 @@
+<mujoco>
+	<include file="camera.xml"/>
+
+	<!-- sensor for camera positions -->
+	<sensor>
+		<actuatorpos name="Sap_rgb_camera_jointz" actuator="A_rgb_camera_jointz"/>
+		<actuatorpos name="Sap_rgb_camera_jointx" actuator="A_rgb_camera_jointx"/>
+
+		<actuatorvel name="Sav_rgb_camera_jointz" actuator="A_rgb_camera_jointz"/>
+		<actuatorvel name="Sav_rgb_camera_jointx" actuator="A_rgb_camera_jointx"/>
+
+		<actuatorfrc name="Saf_rgb_camera_jointz" actuator="A_rgb_camera_jointz"/>
+		<actuatorfrc name="Saf_rgb_camera_jointx" actuator="A_rgb_camera_jointx"/>
+	</sensor>
+
+	<!-- control camera angles -->
+	<actuator>
+		<position name="A_rgb_camera_jointx" joint="rgb_camera_jointx"  ctrlrange="-1.57 1.57"/>
+		<position name="A_rgb_camera_jointz" joint="rgb_camera_jointz"  ctrlrange="-3.141592 3.141592"/>
+	</actuator>
+
+</mujoco>

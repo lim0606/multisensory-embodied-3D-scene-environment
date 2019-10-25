@@ -1,0 +1,28 @@
+<mujoco>
+	<!--
+	<include file="mpl_right.xml"/>
+	-->
+    <compiler angle="radian" texturedir="texture/"/>
+	<option timestep="0.002" iterations="50" apirate="50" solver="Newton" tolerance="1e-10" cone="elliptic"/>
+	<size njmax="600" nconmax="150" nstack="300000"/>
+	<statistic extent="1" center="0 -0.2 0.2"/>
+    <visual>
+        <quality shadowsize="2048"/>
+        <map fogstart="6" fogend="10"/>
+        <headlight diffuse=".6 .6 .6" specular="0 0 0"/>
+	</visual>
+
+	<include file="assets.xml"/>
+	<include file="camera.xml"/>
+	<include file="room.xml"/>
+	<!--
+	<include file="table.xml"/>
+	-->
+	<!--
+	<include file="box.xml"/>
+	<include file="cylinder.xml"/>
+	<include file="ellipsoid.xml"/>
+	-->
+	<worldbody>
+	</worldbody>
+</mujoco>

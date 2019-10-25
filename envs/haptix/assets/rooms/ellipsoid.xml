@@ -1,0 +1,15 @@
+<mujoco>
+	<worldbody>
+		<!-- <body name="ellipsoid" pos="0.0 -0.21 0.11" axisangle="0.0 0.0 1.0 0.0"> -->
+		<body name="ellipsoid" pos="0.0 -0.21 0.06" axisangle="0.0 0.0 1.0 0.0">
+			<!-- <geom type="ellipsoid" material="MatWoodB" size="0.03 0.04 0.06"/> -->
+			<geom type="ellipsoid" size="0.03 0.04 0.06"/>
+			<!-- Comment out to fix the object -->
+			<!--
+			<joint class="free"/>
+			-->
+		</body>
+
+	</worldbody>
+
+</mujoco>

@@ -1,0 +1,16 @@
+<mujoco>
+	<include file="mpl_right.xml"/>
+	<include file="assets.xml"/>
+	<include file="camera.xml"/>
+	<!--
+	<include file="table.xml"/>
+	<include file="room.xml"/>
+	-->
+	<!--
+	<include file="box.xml"/>
+	<include file="cylinder.xml"/>
+	<include file="ellipsoid.xml"/>
+	-->
+	<worldbody>
+	</worldbody>
+</mujoco>

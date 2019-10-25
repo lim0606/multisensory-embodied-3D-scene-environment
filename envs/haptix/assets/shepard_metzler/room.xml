@@ -1,0 +1,19 @@
+<mujoco>
+	<worldbody>
+		<!-- ======= LIGHT ======= -->
+		<!--
+		<light directional="false" cutoff="35" exponent="10" diffuse=".7 .7 .7" pos="0.4 -0.2 1.5" dir="-0.4 0.2 -1.5" specular=".3 .3 .3"/>
+		-->
+		<light directional="false" cutoff="35" exponent="10" diffuse=".7 .7 .7" pos="0. 0. 1.5" dir="0. 0. -1." specular=".3 .3 .3"/>
+
+		<!-- ======= Background  ======= -->
+		<geom name="groundplane" contype="0" conaffinity="0" type="plane" pos="0 0 -5" size="10 10 0.25" material="groundplane"/>
+		<geom name="ceilplane"   contype="0" conaffinity="0" type="plane" pos="0 0 5" zaxis="0 0 -1" size="10 10 0.25" material="groundplane"/>
+		<geom name="groundwall1" type="plane" material="groundplane" pos="7 0 0." zaxis="-1 0 0" size="10 10 .25"/>
+		<geom name="groundwall2" type="plane" material="groundplane" pos="-7 0 0." zaxis="1 0 0" size="10 10 .25"/>
+		<geom name="groundwall3" type="plane" material="groundplane" pos="0 7 0." zaxis="0 -1 0" size="10 10 .25"/>
+		<geom name="groundwall4" type="plane" material="groundplane" pos="0 -7 0." zaxis="0 1 0" size="10 10 .25"/>
+
+	</worldbody>
+
+</mujoco>

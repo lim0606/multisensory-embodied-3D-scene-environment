@@ -1,0 +1,14 @@
+<mujoco>
+	<worldbody>
+		<!-- <body name="sphere" pos="0.0 -0.21 0.11"> -->
+		<body name="sphere" pos="0.0 -0.21 0.04">
+			<!-- <geom type="sphere" material="MatWood" size="0.04" condim="6" friction="1 .001 .001"/> -->
+			<geom type="sphere" size="0.04" condim="6" friction="1 .001 .001"/>
+			<!--
+				 <joint class="free"/>
+			-->
+		</body>
+
+	</worldbody>
+
+</mujoco>

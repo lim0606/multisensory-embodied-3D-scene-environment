@@ -1,0 +1,22 @@
+<mujoco>
+	<include file="MPL.xml"/>
+	<include file="assets.xml"/>
+	<include file="Camera_w_Ctrl.xml"/> 
+
+	<worldbody>
+		<geom type="plane" material="MatPlane" pos=".6 0 0.1" zaxis="-1 0 1" size=".1 .5 .025"/>
+		<geom type="plane" material="MatPlane" pos="-.6 0 0.1" zaxis="1 0 1" size=".1 .5 .025"/>
+		<geom type="plane" material="MatPlane" pos="0 .6 0.1" zaxis="0 -1 1" size=".5 .1 .025"/>
+		<geom type="plane" material="MatPlane" pos="0 -.6 0.1" zaxis="0 1 1" size=".5 .1 .025"/>
+
+		<body name="box" pos="0.0 -0.21 0.11" axisangle="0.0 0.0 1.0 0.0">
+			<geom type="box" material="MatWoodB" size="0.03 0.04 0.06"/>
+			<!-- Comment out to fix the object -->
+			<!--
+			<joint class="free"/>
+			-->
+		</body>
+
+	</worldbody>
+
+</mujoco>
