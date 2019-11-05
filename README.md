@@ -4,7 +4,7 @@ Multisensory Embodied 3D-Scene Environment (MESE) introduced in our paper:
 
 
 ## Introduction
-In [our paper](https://arxiv.org/abs/1910.02344), we introduce Multisensory Embodied 3D-Scene Environment (MESE). MESE integrates MuJoCo (Todorov et al., 2012), MuJoCo HAPTIX (Kumar & Todorov, 2015), and the OpenAI gym (Brockman et al., 2016) for 3D scene understanding through multisensory interactions. In particular, from MuJoCo HAPTIX the Johns Hopkins Modular Prosthetic Limb (MPL) (Johannes et al., 2011) is used. The resulting MESE, equipped with vision and proprioceptive sensors, makes itself particularly suitable for tasks related to human-like embodied multisensory learning. For more information, please visit our [project website](https://sites.google.com/view/generative-multisensory-net).  
+In [our paper](https://arxiv.org/abs/1910.02344), we introduce Multisensory Embodied 3D-Scene Environment (MESE). MESE integrates MuJoCo (Todorov et al., 2012), MuJoCo HAPTIX (Kumar & Todorov, 2015), and the OpenAI gym (Brockman et al., 2016) for 3D scene understanding through multisensory interactions. In particular, from MuJoCo HAPTIX the Johns Hopkins Modular Prosthetic Limb (MPL) (Johannes et al., 2011) is used. The resulting MESE, equipped with vision and proprioceptive sensors, makes itself particularly suitable for tasks related to human-like embodied multisensory learning. <!-- For more information, please visit our [project website](https://sites.google.com/view/generative-multisensory-net). --> 
 
 - Data generation process
 
